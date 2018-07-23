@@ -1,0 +1,104 @@
+/* ============================================ */
+* {box-sizing: border-box;-webkit-box-sizing: border-box;}
+body {padding: 0;margin: 0;font-family: arial;background-color: #fff}
+.space {height: 57px;}
+.space-2 {height: 10px;}
+.clear {clear: both;}
+
+@keyframes focus {
+  0% { box-shadow: 0 0 0 0 #009b9f; }
+  35% { box-shadow: 0 0 0 5px #009b9f; }
+  100% { box-shadow: 0 0 0 2px #009b9f; }
+}
+
+#navbar {position: fixed;width: 250px;overflow: auto;height:100%;box-sizing: border-box;-webkit-box-sizing: border-box;box-shadow: 0 0 10px #0002;z-index: 100}
+.navfixed {padding: 20px;background-color: #fff;border-bottom: 1px solid #eee;position: fixed;width: 250px;text-align: center;z-index: 100;}
+.navsite {padding: 17.5px 20px;font-size: 20px;background-color: #fff;font-weight: bold;position: fixed;width: 100%;z-index: 99;color: #000;box-shadow: 0 0 20px #0002}
+#profile {box-sizing: border-box;-webkit-box-sizing: border-box;margin-top: 57px}
+  #photo-profile {background-color: #fff;background-position: top;position: relative;z-index: 1;padding: 20px;box-shadow: 0 2px 20px #0001;}
+  #name {margin: 20px auto 0;font-size: 16px;text-align: center;width: 100%;}
+  .info {line-height: 30px;}
+  .photo {width: 100px;height: 100px;border-radius: 50%;margin: auto;overflow: hidden;}
+#navlist {}
+  #navlist ul {list-style: none;margin: 0;padding: 0;}
+  #navlist li {padding: 20px 40px;font-size: 14px;background-color: #fff}
+  #navlist li:hover {color: #08b7bd}
+  #navlist li:last-child {border-bottom: 0;}
+  #navlist a {color: #888;text-decoration: none;}
+  .selected {border-left: 5px solid #08b7bd;color: #08b7bd;}
+
+.navbar-container {width: 200px;height: 640px;position: relative;overflow: auto;float: left;;}
+
+.container {margin-left: 250px;}
+
+#container-content {padding: 70px 20px 20px 20px;}
+  .card-space {float: left;width: 50%}
+  .card-space:nth-child(odd) {padding: 0px 10px 0px 0;}
+  .card-space:nth-child(even) {padding: 0px 0 0px 10px;}
+  .card {padding: 40px;width: 100%;margin: 10px 0;background-color: #fff;border-radius: 5px;box-shadow: 0 0 50px #ddd;}
+  .title-card {font-weight: bold;font-size: 18px;color: #888}
+  .title-kiri {float: left;}
+  .title-kanan {float: right;font-family: dripicons-v2;transform: rotate(90deg);-ms-transform:rotate(90deg);-webkit-transform:rotate(90deg);color: #ddd;}
+  .card-fluid {padding: 40px;background-color: #fff;width: 100%;border-radius: 5px;box-shadow: 0 0 50px #ddd;margin: 10px 0 20px;}
+
+  #pendapatan {height: 320px;width: 100%;overflow: auto;}
+  .pendapatan-item {background-color: #fff;border-radius: 5px;box-shadow: 0 0 15px #ddd;margin: 20px 5px}
+  .bulan_pendapatan {padding: 20px;font-size: 20px;}
+  .pos-kiri {float: left;}
+  .pos-kanan {float: right;color: #08b7bd}
+
+  .login-area {width: 500px;height: 400px;position: absolute;top: 50%;margin-top: -200px;left: 50%;margin-left: -250px}
+  .login-container {position: relative;}
+  .flabs-logo {width: 150px;position: absolute;left: 50%;margin-left: -75px}
+  .logo_flabs {width: 150px;}
+  .form-container {width: 400px;position: absolute;top: 250px;left: 50%;margin-left: -200px;}
+  .textinput {margin-bottom: 20px;border: 0;border-bottom: 2px solid #d6d6d6;padding: 10px;font-size: 18px;text-align: center;width: 400px;color: #a3a3a3}
+  .buttoninput {padding: 10px;margin: 0 10px;border-radius: 5px;border: 0;width: 100px;text-align: right !important;box-shadow: 0 5px 0 0 #a7a7a7;background-color: #dadada;cursor: pointer;}
+  .form {text-align: center;color: #a3a3a3}
+  .inputcombine-container {display: flex;}
+    .textinput:focus {box-shadow: 0 0 0 0 #0000 !important;}
+    .textinputcombine1 {margin-bottom: 20px;border: 0;border-bottom: 2px solid #d6d6d6;padding: 10px 20px;font-size: 18px;text-align: right;width: 200px;color: #a3a3a3}
+    .textinputcombine2 {margin-bottom: 20px;border: 0;border-bottom: 2px solid #d6d6d6;padding: 10px 20px;font-size: 18px;text-align: left;width: 200px;color: #a3a3a3}
+    .textinputcombine1:focus {box-shadow: 0 0 0 0 #0000 !important;outline: none}
+    .textinputcombine2:focus {box-shadow: 0 0 0 0 #0000 !important;outline: none}
+  .login-area2 {width: 500px;height: 600px;position: absolute;top: 50%;margin-top: -300px;left: 50%;margin-left: -250px}
+  .textinput::placeholder, .textinputcombine1::placeholder, .textinputcombine2::placeholder {color: #c3c3c3}
+  .alert {width: 300px;margin: 30px auto;background-color: #ff8888;color: #fff;padding: 10px;border-radius: 10px;text-align: center;}
+
+.table-data {width: 100%;margin-top: 20px}
+.table-data th{text-align: left;padding: 10px;color: #08b7bd;}
+.table-data td{text-align: left;padding: 10px;margin: 0;border-top: 1px solid #ebebeb}
+.table-data a{color: #fff;text-decoration: none;background-color: #08b7bd;padding: 10px;border-radius: 5px;}
+.table-data a:hover{background-color: #009b9f}
+.table-data tr:hover {color: #009b9f;}
+.table-scroll {height: 220px;overflow: auto;}
+
+.formfocus:focus {animation-name: focus;animation-duration: 0.5s;outline: none !important;box-shadow: 0 0 0 2px #009b9f;}
+.pilihan_data {padding: 15px 10px;font-size: 18px;width: 100%;margin: 10px 0;text-align: right;border: 1px solid #08b7bd}
+.pilihan_data select {text-align: left;}
+.inputtext {padding: 15px;font-size: 18px;width: 100%;margin: 10px 0;text-align: left;border: 1px solid #08b7bd}
+.inputsubmit {padding: 15px;font-size: 18px;width: 100%;margin: 10px 0 0;text-align: left;background-color: #08b7bd;border: 0;color: #fff;}
+.inputsubmit:hover {background-color: #009b9f;cursor: pointer;}
+.add_data {margin: 10px 0 0;}
+
+.inputtext-2 {width: 40%;padding: 15px;font-size: 18px;border: 1px solid #08b7bd;}
+.inputtext-3 {width: 20%;padding: 15px;font-size: 18px;border: 1px solid #08b7bd;}
+.inputsubmit-2 {width: 18.6%;padding: 16px;font-size: 18px;background-color: #08b7bd;border: 0;color: #fff}
+.inputsubmit-2:hover {background-color: #009b9f;cursor: pointer;}
+
+.title-cek {margin: 10px 0;font-size: 20px;font-weight: bold;}
+.min-stok-container {overflow: auto;width: 100% + 10px;height: 80px;margin: 0 0 0 -10px;}
+.min-stok {padding: 20px;background-color: #fff;margin: 10px 10px 10px 10px;float: left;box-shadow: 0 0 20px #0002;border-radius: 5px}
+.go-stok {padding: 20px;background-color: #08b7bd;margin: 10px 10px 10px 10px;float: left;box-shadow: 0 0 20px #0002;border-radius: 5px;color: #fff !important}
+
+/* width */
+::-webkit-scrollbar {width: 5px;}
+
+/* Track */
+::-webkit-scrollbar-track {background: #f1f1f100;}
+
+/* Handle */
+::-webkit-scrollbar-thumb {background: #08b7bd;}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {background: #009b9f;}
