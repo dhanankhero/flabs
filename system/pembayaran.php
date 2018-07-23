@@ -136,7 +136,7 @@
               }
                ?>
                <tr>
-                 <td colspan="6" style="padding: 40px 0 0 0"><center><a href="database.php">Lihat Semua data</a></center></td>
+                 <td colspan="6" style="padding: 40px 0 0 0"><div class="tdlink"><a href="database.php">Lihat Semua data</a></div></td>
                </tr>
             </tbody>
           </table>

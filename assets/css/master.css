@@ -68,8 +68,9 @@ body {padding: 0;margin: 0;font-family: arial;background-color: #fff}
 .table-data {width: 100%;margin-top: 20px}
 .table-data th{text-align: left;padding: 10px;color: #08b7bd;}
 .table-data td{text-align: left;padding: 10px;margin: 0;border-top: 1px solid #ebebeb}
-.table-data a{color: #fff;text-decoration: none;background-color: #08b7bd;padding: 10px;border-radius: 5px;}
-.table-data a:hover{background-color: #009b9f}
+.tdlink {text-align: center;}
+.tdlink a{color: #fff;text-decoration: none;background-color: #08b7bd;padding: 10px;border-radius: 5px;}
+.tdlink a:hover{background-color: #009b9f}
 .table-data tr:hover {color: #009b9f;}
 .table-scroll {height: 220px;overflow: auto;}
 

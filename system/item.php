@@ -65,6 +65,7 @@
               <th>Nama</th>
               <th>Harga Beli</th>
               <th>Harga Jual</th>
+              <th style='text-align:right'>Delete</th>
             </thead>
             <tbody>
 
@@ -80,6 +81,7 @@
                 echo "<td>".$data['nama_barang']."</td>";
                 echo "<td>Rp. ".$data['harga_beli'].",00</td>";
                 echo "<td>Rp. ".$data['harga_barang'].",00</td>";
+                echo "<td style='text-align:right'><a href='delete_data_act.php?id_barang=".$data['id_barang']."'><img src='../assets/img/error.png' width='25px'></a></td>";
                 echo "</tr>";
                 $no++;
               }

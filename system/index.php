@@ -154,7 +154,7 @@
                   echo "<td>".$no."</td>";
                   echo "<td>".$data['id_barang']."</td>";
                   echo "<td>".$data['data_name']."</td>";
-                  echo "<td>".$data['data_harga']."</td>";
+                  echo "<td>Rp. ".$data['data_harga'].",00</td>";
                   echo "<td>".$data['data_kuantitas']." Unit</td>";
                   echo "<td> Rp. ".$data['data_harga']*$data['data_kuantitas'].",00</td>";
                   echo "</tr>";
@@ -162,7 +162,7 @@
                 }
                  ?>
                  <tr>
-                   <td colspan="6" style="padding: 40px 0 0 0"><center><a href="database.php">Lihat Semua data</a></center></td>
+                   <td colspan="6" style="padding: 40px 0 0 0"><div class="tdlink"><a href="database.php">Lihat Semua data</a></div></td>
                  </tr>
               </tbody>
             </table>
